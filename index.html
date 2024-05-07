@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Linkedjob</title>
+
+        <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header id="main-header">
+            <div>
+                <div>
+                    <img
+                        id="header-logo"
+                        src="images/linkedjob.png"
+                        alt="Linkedjob"
+                    />
+                    <img
+                        id="header-picture-menu"
+                        src="images/picture.jpeg"
+                        alt="Profile picture"
+                    />
+                    <span id="header-picture-menu-bars">
+                        <span class="fas fa-bars"></span>
+                    </span>
+
+                    <div>
+                        <input
+                            id="search"
+                            type="text"
+                            placeholder="       Search"
+                            onfocus="toggleSearchInput()"
+                            onblur="toggleSearchInput()"
+                        />
+                        <span id="search-icon" class="fas fa-search"></span>
+                        <span id="search-button" class="fas fa-search"></span>
+                    </div>
+                    <span class="fas fa-comments"></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <div id="home" class="selected">
+                                <span class="fas fa-home"></span>
+                                <span class="nav-item-text">Home</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="fas fa-user-friends"></span>
+                                <span class="nav-item-text">My Network</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="fas fa-suitcase"></span>
+                                <span class="nav-item-text">Jobs</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="fas fa-envelope"></span>
+                                <span class="nav-item-text">Messaging</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="fas fa-bell"></span>
+                                <span class="nav-item-text">Notifications</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="right-border">
+                                <img
+                                    src="images/profile.jpeg"
+                                    alt="Profile picture"
+                                />
+
+                                <span class="nav-item-text">
+                                    Me<span class="fas fa-caret-down"> </span
+                                ></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="fas fa-th"></span>
+
+                                <span class="nav-item-text"
+                                    >Work<span class="fas fa-caret-down"> </span
+                                ></span>
+                            </div>
+                        </li>
+                        <li id="premium">
+                            <div>
+                                <a href="#">Try free</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- LOADING PAGE -->
+        <div id="loading-page">
+            <div>
+                <img src="/images/linkedin.png" alt="" />
+                <div id="dot-loader">
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MAIN CONTAINER -->
+        <div class="container">
+            <!-- ADS -->
+            <section id="ads">
+                <!-- <div>
+                    <a>
+                        <span id="ad-title">Your project needs CI/CD. -</span>
+                        <span id="ad-subtitle"
+                            >Add the most popular GitHub integration and start
+                            building for free.
+                        </span>
+                    </a>
+                    <span id="ad">Ad </span>
+                </div> -->
+            </section>
+            <!-- LEFT ASIDE -->
+            <div id="left-aside-wrapper">
+                <aside id="left-aside">
+                    <div id="profile-card">
+                        <div id="background"></div>
+                        <div id="profile-info">
+                            <img
+                                src="images/profile.jpeg"
+                                alt="Profile picture"
+                            />
+                            <strong id="profile-name"
+                                >Quang Trường</strong
+                            >
+                            <small>Back-end Developer</small>
+                        </div>
+                        <div id="profile-links">
+                            <a href="#">
+                                <span>
+                                    Who's viewed your profile
+                                </span>
+                                <span class="profile-number">
+                                    102
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>
+                                    Connections
+                                </span>
+                                <span class="profile-number">
+                                    452
+                                </span>
+                            </a>
+                        </div>
+                        <span>Grow your network</span>
+                        <a href="#">
+                            <span>Update Profile</span>
+                        </a>
+                    </div>
+                    <div id="profile-groups">
+                        <section>
+                            <header
+                                onmouseover="showProfileGroupIcon(this)"
+                                onmouseout="showProfileGroupIcon(this)"
+                            >
+                                <span>Recent</span>
+                                <span
+                                    class="fas fa-angle-up"
+                                    onclick="toggleProfileGroupList(this)"
+                                ></span>
+                            </header>
+                            <ul class="group-list">
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>React Developers</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-hashtag"></span>
+                                    <span>javascript</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-hashtag"></span>
+                                    <span>webdevelopment</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>Javascript Brasil</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>Dog Lovers</span>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header
+                                onmouseover="showProfileGroupIcon(this)"
+                                onmouseout="showProfileGroupIcon(this)"
+                            >
+                                <span class="group-title">Groups</span>
+                                <span
+                                    class="fas fa-angle-up"
+                                    onclick="toggleProfileGroupList(this)"
+                                ></span>
+                            </header>
+                            <ul>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span id="aaaa">React Developers</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>Javascript Brasil</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>Dog Lovers</span>
+                                </li>
+                            </ul>
+                            <div class="group-list">
+                                <a href="#">See all</a>
+                            </div>
+                        </section>
+                        <section>
+                            <header
+                                onmouseover="showProfileGroupIcon(this)"
+                                onmouseout="showProfileGroupIcon(this)"
+                            >
+                                <span class="group-title">
+                                    Followed Hashtags</span
+                                >
+                                <span
+                                    class="fas fa-angle-up"
+                                    onclick="toggleProfileGroupList(this)"
+                                ></span>
+                            </header>
+                            <ul>
+                                <li>
+                                    <span class="fas fa-hashtag"></span>
+                                    <span>javascript</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-hashtag"></span>
+                                    <span>webdevelopment</span>
+                                </li>
+                            </ul>
+                            <a href="#">See all</a>
+                        </section>
+                        <a href="#">Discover more</a>
+                    </div>
+                </aside>
+            </div>
+            <!-- MAIN -->
+            <div id="main-wrapper">
+                <main id="main-section">
+                    <div id="share-box">
+                        
+                        <div id="button-box">
+                            <button id="btn-post">
+                                <!-- <span class="fas fa-edit"></span> -->
+                                <img src="images/profile.jpeg" alt="">
+                                <input id="input-post" placeholder="Start a post...">
+                                <!-- <span id="btn-text">Start a post</span> -->
+                            </button>
+                            <div id="btn-main">
+                                <button id="btn-picture">
+                                    <span class="fas fa-camera"></span>
+                                </button>
+                                <button id="btn-video">
+                                    <span class="fas fa-video"></span>
+                                </button>
+                                <button id="btn-document">
+                                    <span class="fas fa-file"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- <div id="link-box">
+                            <a href="#">Write an article</a>
+                            <span>on LinkedIn</span>
+                        </div> -->
+                    </div>
+                    <div id="feed-sort">
+                        <hr />
+                        <button>
+                            <span>Sort by:</span>
+                            <strong>Top</strong>
+                            <span class="fas fa-sort-down"></span>
+                        </button>
+                    </div>
+                    <article>
+                        <div id="post-author">
+                            <a href="#">
+                                <div>
+                                    <img
+                                        src="images/fpt.png"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <div>
+                                            <strong id="post-author-name"
+                                                >FPT Telecom</strong
+                                            >
+                                            <span>
+                                                <span>&nbsp;·&nbsp;</span>
+                                                1st</span
+                                            >
+                                        </div>
+                                        <span
+                                            >Fpt
+                                            Software</span
+                                        >
+                                        <span>12h</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div>
+                            
+                                <button id="follow">
+                                    <span class="fas fa-plus"></span>
+                                    <span> </span>
+                                    <span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="post-data">
+                            <p>
+                                [HCM] FPT SOFTWARE TUYỂN DỤNG 10 FRESHERS DATA ENGINEER - CHƯƠNG TRÌNH ĐÀO TẠO TÀI NĂNG
+                            </p>
+                            <p>
+                                🌈 MÔ TẢ CÔNG VIỆC
+                            Tham gia chương trình đào tạo tài năng Data Engineer từ 3 đến 6 tháng cùng với các chuyên gia về Data trong và ngoài FPT Software
+                            Tham gia các dự án của FPT Software sau khi được đào tạo
+                            </p>
+                            <p>
+                                🌈QUYỀN LỢI
+                                Được đào tạo bài bản về công nghệ, quy trình … và tham gia các dự án trọng điểm của công ty sau đào tạo
+                                Có thể tích hợp các chương trình thực tập cuối khóa tại công ty; hỗ trợ hoàn thành khóa luận tốt nghiệp dành cho sinh viên năm cuối
+                                Được hỗ trợ thi lấy các chứng chỉ của Google, Amazon, Azure, Cloudera
+                            </p>
+                            <p id="post-translation">
+                                <button>See more</button>
+                            </p>
+                            <img src="images/fpt_1.jpg" alt="" />
+                        </div>
+                        <div id="post-interactions">
+                            <div id="interactions-amount">
+                                <span
+                                    id="like-icon"
+                                    class="fas fa-thumbs-up fa-flip-horizontal"
+                                ></span>
+                                <span
+                                    id="heart-icon"
+                                    class="fas fa-heart"
+                                ></span>
+                                <span id="amount-info"
+                                    >23 <span>&nbsp;·&nbsp;</span> 4
+                                    Comments</span
+                                >
+                            </div>
+                            <div id="interactions-btns">
+                                <button>
+                                    <span
+                                        class="far fa-thumbs-up fa-flip-horizontal"
+                                    ></span>
+                                    <span>Like</span>
+                                </button>
+                                <button>
+                                    <span
+                                        class="far fa-comment-dots fa-flip-horizontal"
+                                    ></span>
+                                    <span>Comment</span>
+                                </button>
+                                <button>
+                                    <span class="far fa-share-square"></span>
+                                    <span>Share</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div id="post-author">
+                            <a href="#">
+                                <div>
+                                    <img
+                                        src="images/gmail-1.png"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <div>
+                                            <strong id="post-author-name"
+                                                >Dương Hữu Phúc</strong
+                                            >
+                                            <span>
+                                                <span>&nbsp;·&nbsp;</span>
+                                                1st</span
+                                            >
+                                        </div>
+                                        <span>Lecturer in TDTU</span>
+                                        <span>1h</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div>
+                                <button id="follow">
+                                    <span class="fas fa-plus"></span>
+                                    <span> </span>
+                                    <span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="post-data">
+                            <p>
+                                Giới thiệu đến các bạn một sản phẩm hướng đến cộng đồng ấp ủ lâu nay, và nay đã có thời gian để làm nhờ sự trợ giúp đắc lực của bạn
+                            </p>
+                            <p>
+                                "🤖 Trợ Lý Ảo" Kamimind
+                            </p>
+                            <p id="post-translation">
+                                <a href="https://about.kamimind.ai">Kamimind</a>
+                            </p>
+                            <img src="images/ai.jpg" alt="" />
+                        </div>
+                        <div id="post-interactions">
+                            <div id="interactions-amount">
+                                <span
+                                    id="like-icon"
+                                    class="fas fa-thumbs-up fa-flip-horizontal"
+                                ></span>
+                                <span id="amount-info"
+                                    >18 <span>&nbsp;·&nbsp;</span> 6
+                                    Comments</span
+                                >
+                            </div>
+                            <div id="interactions-btns">
+                                <button>
+                                    <span
+                                        class="far fa-thumbs-up fa-flip-horizontal"
+                                    ></span>
+                                    <span>Like</span>
+                                </button>
+                                <button>
+                                    <span
+                                        class="far fa-comment-dots fa-flip-horizontal"
+                                    ></span>
+                                    <span>Comment</span>
+                                </button>
+                                <button>
+                                    <span class="far fa-share-square"></span>
+                                    <span>Share</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+            <!-- RIGHT ASIDE -->
+            <aside id="right-aside">
+                <div id="rec-section">
+                    <div>
+                        <header>
+                            <span>Add to your feed</span>
+                            <span
+                                class="fas fa-info-circle"
+                                onmouseover="showRecommendationsInfo(this)"
+                                onmouseout="showRecommendationsInfo(this)"
+                            >
+                                <div id="float-info">
+                                    <span>
+                                        Follow things that interest you to
+                                        personalize your feed.
+                                    </span>
+                                    <a href="#">Learn more.</a>
+                                </div>
+                                <span>►</span>
+                                <div id="square"></div>
+                            </span>
+                        </header>
+                        <div>
+                            <div>
+                                <img src="images/hybrid.jpeg" alt="" style="border-radius: 50%;"/>
+                                <div>
+                                    <strong>Hybrid Technologies</strong>
+                                    <small>Company - Computer Software</small>
+                                </div>
+                                <button>
+                                    <span class="fas fa-plus"></span>
+                                    <span>Follow</span>
+                                </button>
+                            </div>
+                            <div>
+                                <img src="images/react.png" alt="" />
+                                <div>
+                                    <strong>#reactjs</strong>
+                                </div>
+                                <button>
+                                    <span class="fas fa-plus"></span>
+                                    <span>Follow</span>
+                                </button>
+                            </div>
+                            <div>
+                                <img src="images/gmail-3.png" alt="" style="border-radius: 50%;" />
+                                <div>
+                                    <strong>Minh Ngọc</strong>
+                                </div>
+                                <button>
+                                    <span class="fas fa-plus"></span>
+                                    <span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#">View all recommendations</a>
+                    </div>
+                </div>
+                <div id="linkedin-section">
+                    <section>
+                        <!-- <small>Ad</small> -->
+                        <a href="#">
+                            <div>
+                                <img src="images/profile.jpeg" alt="" />
+                                <img
+                                    id="linkedin-key"
+                                    src="images/linkedin-ad.png"
+                                    alt=""
+                                />
+                            </div>
+                            <strong>
+                                See who's viewed your profile in the last 90
+                                days
+                            </strong>
+                            <div>
+                                <button>Try for free</button>
+                            </div>
+                        </a>
+                    </section>
+                    <footer>
+                        <ul>
+                            <li>About</li>
+                            <li>Help Center</li>
+                            <li>More</li>
+                        </ul>
+                        <div>
+                            <strong>Linked<span>job</span></strong>
+                            <span>LinkedJob</span>
+                        </div>
+                    </footer>
+                </div>
+            </aside>
+        </div>
+    </body>
+</html>
