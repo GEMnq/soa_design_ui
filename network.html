@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="network.css" />
         <link rel="stylesheet" href="style_card_profile.css" />
 
-        <script src="script.js"></script>
+        <script src="script_network.js"></script>
         <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
     </head>
     <body>
@@ -128,146 +128,16 @@
             </section>
             <!-- LEFT ASIDE -->            
             <div id="left-aside-wrapper">
-                <aside id="left-aside">
-                    <div id="profile-card">
-                        <div id="background"></div>
-                        <div id="profile-info">
-                            <img
-                                src="images/profile.jpeg"
-                                alt="Profile picture"
-                            />
-                            <strong id="profile-name"
-                                >Quang Trường</strong
-                            >
-                            <small>Back-end Developer</small>
-                        </div>
-                        <div id="profile-links">
-                            <a href="#">
-                                <span>
-                                    Who's viewed your profile
-                                </span>
-                                <span class="profile-number">
-                                    102
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    Connections
-                                </span>
-                                <span class="profile-number">
-                                    452
-                                </span>
-                            </a>
-                        </div>
-                        <span>Grow your network</span>
-                        <a href="#">
-                            <span>Update Profile</span>
-                        </a>
-                    </div>
-                    <div id="profile-groups">
-                        <section>
-                            <header
-                                onmouseover="showProfileGroupIcon(this)"
-                                onmouseout="showProfileGroupIcon(this)"
-                            >
-                                <span>Recent</span>
-                                <span
-                                    class="fas fa-angle-up"
-                                    onclick="toggleProfileGroupList(this)"
-                                ></span>
-                            </header>
-                            <ul class="group-list">
-                                <li>
-                                    <span class="fas fa-users"></span>
-                                    <span>React Developers</span>
-                                </li>
-                                <li>
-                                    <span class="fas fa-hashtag"></span>
-                                    <span>javascript</span>
-                                </li>
-                                <li>
-                                    <span class="fas fa-hashtag"></span>
-                                    <span>webdevelopment</span>
-                                </li>
-                                <li>
-                                    <span class="fas fa-users"></span>
-                                    <span>Javascript Brasil</span>
-                                </li>
-                                <li>
-                                    <span class="fas fa-users"></span>
-                                    <span>Dog Lovers</span>
-                                </li>
-                            </ul>
-                        </section>
-                        <section>
-                            <header
-                                onmouseover="showProfileGroupIcon(this)"
-                                onmouseout="showProfileGroupIcon(this)"
-                            >
-                                <span class="group-title">Groups</span>
-                                <span
-                                    class="fas fa-angle-up"
-                                    onclick="toggleProfileGroupList(this)"
-                                ></span>
-                            </header>
-                            <ul>
-                                <li>
-                                    <span class="fas fa-users"></span>
-                                    <span id="aaaa">React Developers</span>
-                                </li>
-                                <li>
-                                    <span class="fas fa-users"></span>
-                                    <span>Javascript Brasil</span>
-                                </li>
-                                <li>
-                                    <span class="fas fa-users"></span>
-                                    <span>Dog Lovers</span>
-                                </li>
-                            </ul>
-                            <div class="group-list">
-                                <a href="#">See all</a>
-                            </div>
-                        </section>
-                        <section>
-                            <header
-                                onmouseover="showProfileGroupIcon(this)"
-                                onmouseout="showProfileGroupIcon(this)"
-                            >
-                                <span class="group-title">
-                                    Followed Hashtags</span
-                                >
-                                <span
-                                    class="fas fa-angle-up"
-                                    onclick="toggleProfileGroupList(this)"
-                                ></span>
-                            </header>
-                            <ul>
-                                <li>
-                                    <span class="fas fa-hashtag"></span>
-                                    <span>javascript</span>
-                                </li>
-                                <li>
-                                    <span class="fas fa-hashtag"></span>
-                                    <span>webdevelopment</span>
-                                </li>
-                            </ul>
-                            <a href="#">See all</a>
-                        </section>
-                        <a href="#">Discover more</a>
-                    </div>
+                <aside id="left-aside-accept">
+                         
+                </aside>
+                <aside id="left-aside">                    
                 </aside>
             </div>
             <!-- MAIN -->
             <div id="main-wrapper">
                 <main id="main-section">
-                    <!-- <div id="feed-sort">
-                        <hr />
-                        <button>
-                            <span>Sort by:</span>
-                            <strong>Top</strong>
-                            <span class="fas fa-sort-down"></span>
-                        </button>
-                    </div> -->
+                    
                     <!-- Business who are in Vietnam also follow these people  -->
                     <article>
                         <div id="post-author">
@@ -283,144 +153,11 @@
                                         
                                     </div>
                                 </div>
-                            </a>
-                            <div>
-                                <button id="follow">
-                                    <span>See all</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="_container">
-                            <!-- column 1 -->
-                                <div class="card-container">
-                                    <div class="upper-container">
-                                        <div class="image-container">
-                                            <img src="images/fpt.png" />
-                                        </div>
-                                    </div>
-                                    <div class="lower-container">
-                                        <div>
-                                            <div class="lower-container-header">FPT</div>
-                                            <div class="lower-container-job">FPT SOFTWARE</div>
-                                        </div>
-                                        <div>
-                                            <p>129,11 followers
-                                            </p>
-                                        </div>
-                                        <div class="btn-container">
-                                            <a href="#" class="btn">Follow</a>
-                                        </div>
-                                    </div>
-                                </div>                           
-                            <!-- column 2 -->
-                            <div class="card-container">
-                                <div class="upper-container">
-                                    <div class="image-container">
-                                        <img src="images/fpt.png" />
-                                    </div>
-                                </div>
-                                <div class="lower-container">
-                                    <div>
-                                        <div class="lower-container-header">FPT</div>
-                                        <div class="lower-container-job">FPT SOFTWARE</div>
-                                    </div>
-                                    <div>
-                                        <p>129,11 followers
-                                        </p>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a href="#" class="btn">Follow</a>
-                                    </div>
-                                </div>
-                                </div>
-                                <!-- column 3 -->
-                            <div class="card-container">
-                                <div class="upper-container">
-                                    <div class="image-container">
-                                        <img src="images/fpt.png" />
-                                    </div>
-                                </div>
-                                <div class="lower-container">
-                                    <div>
-                                        <div class="lower-container-header">FPT</div>
-                                        <div class="lower-container-job">FPT SOFTWARE</div>
-                                    </div>
-                                    <div>
-                                        <p>129,11 followers
-                                        </p>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a href="#" class="btn">Follow</a>
-                                    </div>
-                                </div>
-                                </div>
-                        </div>
-                        <div class="_container">
-                            <!-- column 1 -->
-                                <div class="card-container">
-                                    <div class="upper-container">
-                                        <div class="image-container">
-                                            <img src="images/fpt.png" />
-                                        </div>
-                                    </div>
-                                    <div class="lower-container">
-                                        <div>
-                                            <div class="lower-container-header">FPT</div>
-                                            <div class="lower-container-job">FPT SOFTWARE</div>
-                                        </div>
-                                        <div>
-                                            <p>129,11 followers
-                                            </p>
-                                        </div>
-                                        <div class="btn-container">
-                                            <a href="#" class="btn">Follow</a>
-                                        </div>
-                                    </div>
-                                </div>                           
-                            <!-- column 2 -->
-                            <div class="card-container">
-                                <div class="upper-container">
-                                    <div class="image-container">
-                                        <img src="images/fpt.png" />
-                                    </div>
-                                </div>
-                                <div class="lower-container">
-                                    <div>
-                                        <div class="lower-container-header">FPT</div>
-                                        <div class="lower-container-job">FPT SOFTWARE</div>
-                                    </div>
-                                    <div>
-                                        <p>129,11 followers
-                                        </p>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a href="#" class="btn">Follow</a>
-                                    </div>
-                                </div>
-                                </div>
-                                <!-- column 3 -->
-                            <div class="card-container">
-                                <div class="upper-container">
-                                    <div class="image-container">
-                                        <img src="images/fpt.png" />
-                                    </div>
-                                </div>
-                                <div class="lower-container">
-                                    <div>
-                                        <div class="lower-container-header">FPT</div>
-                                        <div class="lower-container-job">FPT SOFTWARE</div>
-                                    </div>
-                                    <div>
-                                        <p>129,11 followers
-                                        </p>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a href="#" class="btn">Follow</a>
-                                    </div>
-                                </div>
-                                </div>
-                            
-                        </div>                      
+                            </a>                          
+                        </div> 
+                       
+                        <div class="_container" id="list-business">                            
+                        </div>                  
                     </article>
                     
                     <!-- Recommended for you -->
@@ -438,78 +175,9 @@
                                         
                                     </div>
                                 </div>
-                            </a>
-                            <div>
-                                <button id="follow">
-                                    <span>See all</span>
-                                </button>
-                            </div>
+                            </a>               
                         </div>
-                        <div class="_container">
-                            <!-- column 1 -->
-                                <div class="card-container">
-                                    <div class="upper-container">
-                                        <div class="image-container">
-                                            <img src="images/gmail-3.png" />
-                                        </div>
-                                    </div>
-                                    <div class="lower-container">
-                                        <div>
-                                            <div class="lower-container-header">Minh Ngọc</div>
-                                            <div class="lower-container-job">Sinh viên khoa CNTT</div>
-                                        </div>
-                                        <div>
-                                            <p>29,11 followers
-                                            </p>
-                                        </div>
-                                        <div class="btn-container">
-                                            <a href="#" class="btn">Add Friend</a>
-                                        </div>
-                                    </div>
-                                </div>                           
-                            <!-- column 2 -->
-                            <div class="card-container">
-                                <div class="upper-container">
-                                    <div class="image-container">
-                                        <img src="images/gmail-3.png" />
-                                    </div>
-                                </div>
-                                <div class="lower-container">
-                                    <div>
-                                        <div class="lower-container-header">Minh Ngọc</div>
-                                        <div class="lower-container-job">Sinh viên khoa CNTT</div>
-                                    </div>
-                                    <div>
-                                        <p>29,11 followers
-                                        </p>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a href="#" class="btn">Add Friend</a>
-                                    </div>
-                                </div>
-                            </div>     
-                            <!-- column 3 -->
-                            <div class="card-container">
-                                <div class="upper-container">
-                                    <div class="image-container">
-                                        <img src="images/gmail-3.png" />
-                                    </div>
-                                </div>
-                                <div class="lower-container">
-                                    <div>
-                                        <div class="lower-container-header">Minh Ngọc</div>
-                                        <div class="lower-container-job">Sinh viên khoa CNTT</div>
-                                    </div>
-                                    <div>
-                                        <p>29,11 followers
-                                        </p>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a href="#" class="btn">Add Friend</a>
-                                    </div>
-                                </div>
-                            </div>        
-                            
+                        <div class="_container" id="list-friend-student">                           
                         </div>
                     </article>
 
@@ -529,34 +197,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <div>
-                                <button id="follow">
-                                    <span>See all</span>
-                                </button>
-                            </div>
                         </div>
-                        <div class="_container">
-                            <!-- column 1 -->
-                                <div class="card-container">
-                                    <div class="upper-container">
-                                        <div class="image-container">
-                                            <img src="images/gmail-1.png" />
-                                        </div>
-                                    </div>
-                                    <div class="lower-container">
-                                        <div>
-                                            <div class="lower-container-header">Dương Hữu Phúc</div>
-                                            <div class="lower-container-job">Giảng viên khoa CNTT</div>
-                                        </div>
-                                        <div>
-                                            <p>20,11 followers
-                                            </p>
-                                        </div>
-                                        <div class="btn-container">
-                                            <a href="#" class="btn">Add Friend</a>
-                                        </div>
-                                    </div>
-                                </div>                                               
+                        <div class="_container" id="list-lecturer">                                      
                         </div>
                     </article>
                 </main>

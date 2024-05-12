@@ -15,6 +15,7 @@
     grid-template-columns: 1fr 1fr 1fr; 
     grid-gap: 15px; 
     margin: 15px;
+
 }
 
 .upper-container{
@@ -64,7 +65,7 @@
     text-align: center;
 }
 
-.lower-container .btn{
+.lower-container .btn-follow{
     padding: 10px 60px;
     background: #fff;
     border: solid blue 1px;
@@ -75,7 +76,24 @@
     font-weight: bold;
     transition: all .3s ease-in;
 }
-.lower-container .btn:hover{
+.lower-container .btn-follow:hover{
+    background: rgb(75, 75, 170);
+    color: #fff;
+    border: 2px solid rgb(75, 75, 170);
+}
+
+.lower-container .btn-addfri{
+    padding: 10px 60px;
+    background: #fff;
+    border: solid blue 1px;
+    color: blue;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s ease-in;
+}
+.lower-container .btn-addfri:hover{
     background: rgb(75, 75, 170);
     color: #fff;
     border: 2px solid rgb(75, 75, 170);
